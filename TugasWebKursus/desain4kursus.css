@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/aintdhikaheader.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.logobre img {
+  width: 150px;
+}
+
+.logobre {
+  color: white;
+  justify: center;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.menu ul li a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.menu ul li ::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ff4800;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.menu ul li :hover::after {
+  width: 100%;
+}
+
+.textboxt {
+  width: 90%;
+  color: #ffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textboxt h1 {
+  font-size: 62px;
+}
+
+.textboxt p {
+  margin: 10px 0px 40px;
+  font-size: 14x;
+}
+
+.btn1 {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffff;
+  border: 1px solid #ffff;
+  padding: 12px 34px;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+}
+
+.btn1:hover {
+  border: 1px solid #ff4800;
+  background: #ff4800;
+  transition: 1s;
+}
+
+/*--- course ---*/
+
+.course {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.course p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coursecol {
+  flex-basis: 31%;
+  background: #053b50;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.coursecol li {
+  color: white;
+  text-align: left;
+}
+
+.coursecol h3 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.coursecol:hover {
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*--- FACILITIES ---*/
+
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.facilitiescol {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilitiescol img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilitiescol p {
+  padding: 0;
+}
+
+.facilitiescol h3 {
+  text-align: left;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+/*--- Contact Us ---*/
+.contactus {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/infor7.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.contactus h1 {
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}

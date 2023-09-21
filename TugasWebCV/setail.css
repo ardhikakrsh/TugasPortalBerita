@@ -1,0 +1,64 @@
+body {
+  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.border {
+  margin: auto;
+  width: 1000px;
+  height: auto;
+  padding: 40px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.batas {
+  margin-top: 20px;
+  background-color: black;
+  width: 100%;
+  height: 3px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head img {
+  padding-top: 20px;
+  width: 150px;
+  height: 160px;
+}
+
+.head .nama {
+  padding-left: 20px;
+  font-size: xx-large;
+  margin-bottom: 2px;
+}
+
+.head .kontak {
+  font-size: medium;
+  color: grey;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.head .alamat {
+  font-size: medium;
+  color: grey;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.head .aboutme {
+  font-size: medium;
+  padding-left: 2%;
+  margin-top: 0px;
+  padding-left: 20px;
+}
+
+.tempat {
+  color: grey;
+}
