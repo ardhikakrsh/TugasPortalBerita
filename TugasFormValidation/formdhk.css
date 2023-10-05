@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+body {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(assets/aintdhikaheader.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.container h2 {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-group label {
+  color: white;
+}
+
+#emailHelp {
+  color: white;
+}
+
+.container {
+  margin-top: 3rem;
+}

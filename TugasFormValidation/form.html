@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Belajar Form Validation</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="formdhk.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Ain't Dhika Basketball Academy Registration</h2>
+      <form
+        name="formPendaftaran"
+        action="#"
+        method="post"
+        onsubmit="return validateForm()"
+      >
+        <div class="form-group">
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            class="form-control"
+            required
+            maxlength="100"
+            minlength="3"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your Phone Number"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Height</label>
+          <input
+            type="height"
+            name="height"
+            placeholder="Your Height (cm)"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Experience</label>
+          <input
+            type="experience"
+            name="experience"
+            placeholder="Your Experience"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Active"
+            class="form-control"
+          />
+
+          <small id="emailHelp" class="form-text"
+            >For sending a notification.</small
+          >
+        </div>
+
+        <div class="form-group">
+          <label>Position</label>
+          <select name="position" class="form-control">
+            <option value="0">Choose Position</option>
+            <option value="1">Point Guard</option>
+            <option value="2">Shooting Guard</option>
+            <option value="3">Small Forward</option>
+            <option value="4">Power Forward</option>
+            <option value="5">Center</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <script>
+      function validateForm() {
+        if (document.forms["formPendaftaran"]["name"].value == "") {
+          alert("Name cannot be empty");
+          document.forms["formPendaftaran"]["name"].focus();
+          return false;
+        }
+        if (document.forms["formPendaftaran"]["phone"].value == "") {
+          alert("Phone number cannot be empty");
+          document.forms["formPendaftaran"]["phone"].focus();
+          return false;
+        }
+
+        if (document.forms["formPendaftaran"]["height"].value == "") {
+          alert("Height cannot be empty");
+          document.forms["formPendaftaran"]["height"].focus();
+          return false;
+        }
+
+        if (document.forms["formPendaftaran"]["experience"].value == "") {
+          alert("Experience cannot be empty");
+          document.forms["formPendaftaran"]["experience"].focus();
+          return false;
+        }
+        if (document.forms["formPendaftaran"]["email"].value == "") {
+          alert("Email cannot be empty");
+          document.forms["formPendaftaran"]["email"].focus();
+          return false;
+        }
+        if (document.forms["formPendaftaran"]["position"].selectedIndex < 1) {
+          alert("Choose Your Position!");
+          document.forms["formPendaftaran"]["position"].focus();
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
